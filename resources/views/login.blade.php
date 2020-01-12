@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <h2 align='center'>Login2 ss</h2>
+        <h2 align='center'>Login</h2>
 
         @if ($message = Session::get('error'))
         <div class="alert alert-danger">
