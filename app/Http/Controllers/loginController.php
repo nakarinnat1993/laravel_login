@@ -25,6 +25,7 @@ class loginController extends Controller
         if (Auth::attempt($user)) {
             return redirect('login/successlogin');
         } else {
+            $request->flash();
             return back()->with('error', 'Login fail');
         }
     }
